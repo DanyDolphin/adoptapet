@@ -1,5 +1,6 @@
 /*********************** COMENTAR EN PRODUCTIVO *******************************/
-require('dotenv').config(); // Configuring dotenv -> Para instalar -> npm i -D dotenv 
+if (process.env.NODE_ENF === 'development')
+  require('dotenv').config(); // Configuring dotenv -> Para instalar -> npm i -D dotenv 
 /*********************** COMENTAR EN PRODUCTIVO *******************************/
 
 var express = require('express'),
